@@ -1,0 +1,36 @@
+{
+  "name": "focuslock-desktop",
+  "version": "1.0.0",
+  "description": "FocusLock Desktop Focus & Screen Monitoring Application",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && tsc -p tsconfig.electron.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@focuslock/shared": "file:../shared",
+    "@mediapipe/camera_utils": "latest",
+    "@mediapipe/face_mesh": "latest",
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "@types/ws": "^8.5.10",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.18",
+    "electron": "^29.1.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.0",
+    "vite": "^5.1.4",
+    "vite-plugin-electron": "^0.28.0",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "vitest": "^1.3.1"
+  }
+}
